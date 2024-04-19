@@ -138,7 +138,7 @@ public class MainService {
             String licenseNo = scanner.nextLine();
             System.out.print("Experience in years: ");
             float experienceInYears = scanner.nextFloat();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
 
             // Create the driver
             driver = new Driver(name, surname,  licenseNo, experienceInYears);
@@ -312,7 +312,7 @@ public class MainService {
 
         System.out.print("Is the parcel fragile? (true/false): ");
         boolean isFragile = scanner.nextBoolean();
-        scanner.nextLine(); // Consume newline character
+        scanner.nextLine(); 
 
         System.out.print("Enter driver's person code: ");
         String driverPersonCode = scanner.nextLine();
