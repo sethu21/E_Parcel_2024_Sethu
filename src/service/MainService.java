@@ -14,13 +14,13 @@ public class MainService {
     private List<AbstractCustomer> allCustomers = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
-    // Main method for user interaction
+    
     public static void main(String[] args) {
         MainService mainService = new MainService();
         mainService.run();
     }
 
-    // Main method for user interaction
+    
     public void run() {
         boolean exit = false;
         while (!exit) {
@@ -47,7 +47,7 @@ public class MainService {
             System.out.println("20. Generate customer as company and parcel");
             System.out.println("0. Exit");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
             switch (choice) {
                 case 1:
                     createNewDriver();
@@ -143,7 +143,7 @@ public class MainService {
             // Create the driver
             driver = new Driver(name, surname,  licenseNo, experienceInYears);
 
-            // Validate the input (you can add more conditions as needed)
+           
             if (driver.getName().isEmpty() || driver.getSurname().isEmpty() ||
                     driver.getLicenseNo().isEmpty() || driver.getExperienceInYears() <= 0) {
                 System.out.println("Invalid input. Please re-enter driver details.");
